@@ -1,0 +1,18 @@
+.todayTitle{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #1976D2;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.sales{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #5b5b5b;
+    position: absolute;
+    bottom: 80px;
+    transform: rotate(-90deg);
+}
+

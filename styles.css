@@ -1,0 +1,20 @@
+body{
+    margin: 0 auto;
+}
+
+.recharts-default-legend{
+    display: none;
+}
+
+.MuiPaper-elevation1{
+    background-color: #1976D2;
+    box-shadow: none!important;
+}
+
+.makeStyles-content-10{
+    background-color: white!important;
+}
+
+.MuiAppBar-colorPrimary{
+    background-color: #1976D2!important;
+}
