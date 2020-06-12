@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
+import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -166,16 +167,18 @@ export default function MiniDrawer({data}) {
             <main className={classes.content}>
                 <div className={classes.toolbar} />
 
-                <div className={s.chartsHolder}>
-                    <div className={s.todayChartHolder}>
-                        <div style={{width: '100%'}}>
-                            <TodayChart/>
-                        </div>
-                    </div>
-                    <div className={s.recentChartHolder} >
-                        <RecentChart/>
-                    </div>
-                </div>
+                <Grid container spacing={1} >
+                        <Grid item sm={12} md={9} >
+                            <div className={s.todayChartHolder}>
+                                <TodayChart/>
+                            </div>
+                    </Grid>
+                    <Grid item sm={12} md={3} >
+                            <div className={s.recentChartHolder}>
+                                <RecentChart/>
+                            </div>
+                    </Grid>
+                </Grid>
 
                 <div className={s.tableHolder}>
                     <div className={s.tableTitle}>Recent Orders</div>

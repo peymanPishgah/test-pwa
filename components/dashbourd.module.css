@@ -1,22 +1,27 @@
 .chartsHolder{
     display: flex;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .todayChartHolder{
+
     position: relative;
     background-color: white;
-    flex: 6;
+    /*flex: 6;*/
     border-radius: 3px;
+    padding: 15px;
     height: 220px;
     margin-right: 12px;
     box-shadow: 1px 1px 3px #c7c7c7;
     border-bottom: 1px solid #989898;
+    /*max-width: 700px;*/
+    max-width: 95%;
 }
 
 .recentChartHolder{
     background-color: white;
-    flex: 2;
+    /*flex: 2;*/
     border-radius: 3px;
     margin-left: 12px;
     height: 220px;

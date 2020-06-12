@@ -34,7 +34,7 @@ export default class Example extends PureComponent {
 
     render() {
         return (
-               <div style={{ width: '100%', height: 150 }}>
+               <div style={{ width: '100%', height: 150 }} >
                    <div className={s.todayTitle}>Today</div>
                    <div className={s.sales}>Sales($)</div>
                    <ResponsiveContainer>

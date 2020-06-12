@@ -39,19 +39,19 @@ export default function MyTable({data}) {
                         <TableCell align="left" style={{fontWeight:'bold'}}>Name</TableCell>
                         <TableCell align="left" style={{fontWeight:'bold'}}>Use Name</TableCell>
                         <TableCell align="left" style={{fontWeight:'bold'}}>Email</TableCell>
-                        <TableCell align="left" style={{fontWeight:'bold'}}>City</TableCell>
+                        <TableCell align="left" style={{fontWeight:'bold'}}>Website</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {rows.map((row) => (
-                        <TableRow key={row.name}>
+                    {data.map((row) => (
+                        <TableRow key={row.id}>
                             <TableCell component="th" scope="row">
-                                {row.name}
+                                {row.id}
                             </TableCell>
-                            <TableCell align="left">dddddd</TableCell>
-                            <TableCell align="left">{row.fat}</TableCell>
-                            <TableCell align="left">{row.carbs}</TableCell>
-                            <TableCell align="left">{row.protein}</TableCell>
+                            <TableCell align="left">{row.name}</TableCell>
+                            <TableCell align="left">{row.username}</TableCell>
+                            <TableCell align="left">{row.email}</TableCell>
+                            <TableCell align="left">{row.website}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

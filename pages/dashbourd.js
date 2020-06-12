@@ -6,19 +6,21 @@ import fetch from 'isomorphic-unfetch';
 const Dashboard = () => {
 
     const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         (async () => {
             const res = await fetch('https://jsonplaceholder.typicode.com/users');
             const response = await res.json();
             setData(response);
+            setLoading(false);
             console.log(response);
         })();
     }, []);
 
     return (
         <div>
-            <Drawer data={data} />
+            {!loading && <Drawer data={data} />}
         </div>
     )
 };
